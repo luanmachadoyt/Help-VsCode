@@ -10,6 +10,7 @@
     <!-- Links -->
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7c3aef27c1.js" crossorigin="anonymous"></script>
+    <script src="assets/img/js/script.js"></script>
 </head>
 
 <body>
@@ -17,13 +18,18 @@
         <div class="logo">
             <h1>{😎}</h1>
         </div>
+        <div class="idioma">
+            <p>Language</p>
+            <img src="assets/img/brasil.png" alt="">
+            <i class="fa-solid fa-chevron-down" onclick="myFunction()"></i>
+        </div>
     </header>
     <div class="todo-conteudo">
         <div class="titulo">
             <h1 id="title">Help <span>VS CODE</span></h1>
         </div>
 
-        <div class="titulo-section">
+        <div class="titulo-section" id="atalhos">
             <h1>Atalhos Simples</h1>
             <div class="linha-titulo"></div>
         </div>
@@ -119,17 +125,17 @@
                 <div class="linha-dividir"></div>
             </div>
         </div>
-
-        <div class="titulo-section">
+        
+        <div class="titulo-section" id="temas">
             <h1>Temas mais utilizados</h1>
             <div class="linha-titulo"></div>
         </div>
-
+        
         <div class="themes">
             <div class="theme">
-                <img src="assets/img/dracula.png" alt="">
                 <h5>Dracula Theme</h5>
-                <a href="https://draculatheme.com/" target="_blank">Adicionar</a>
+                <img src="assets/img/dracula.png" alt="">
+                <a href="https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula" target="_blank">Adicionar</a>
             </div>
             <div class="theme">
                 <img src="assets/img/ballerini.png" alt="">
@@ -150,7 +156,7 @@
             </div>
         </div>
 
-        <div class="titulo-section">
+        <div class="titulo-section" id="extencao">
             <h1>Extensões</h1>
             <div class="linha-titulo"></div>
         </div>
@@ -177,6 +183,43 @@
                 <img src="assets/img/js.png" alt="">
                 <h5>JavaScript</h5>
                 <a href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets&ssr=false#review-details" target="_blank">Adicionar</a>
+            </div>
+        </div>
+        </div>
+        <div class="extensoes">
+            <div class="extensao">
+                <img src="assets/img/liveserver.png" alt="">
+                <h5>Live Server</h5>
+                <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Adicionar</a>
+            </div>
+            <div class="extensao">
+                <img src="assets/img/materialicon.png" alt="">
+                <h5>Material Icons</h5>
+                <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme" target="_blank">Adicionar</a>
+            </div>
+        </div>
+        <div class="extensoes">
+            <div class="extensao">
+                <img src="assets/img/color.png" alt="">
+                <h5>VS Color Picker</h5>
+                <a href="https://marketplace.visualstudio.com/items?itemName=lihui.vs-color-picker" target="_blank">Adicionar</a>
+            </div>
+            <div class="extensao">
+                <img src="assets/img/jupter.png" alt="">
+                <h5>Jupter</h5>
+                <a href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter" target="_blank">Adicionar</a>
+            </div>
+        </div>
+        <div class="extensoes">
+            <div class="extensao">
+                <img src="assets/img/run.png" alt="">
+                <h5>Code Runner</h5>
+                <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner" target="_blank">Adicionar</a>
+            </div>
+            <div class="extensao">
+                <img src="assets/img/poweshell.png" alt="">
+                <h5>PowerShell</h5>
+                <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell" target="_blank">Adicionar</a>
             </div>
         </div>
     </div>

@@ -5,6 +5,10 @@
  border: none;
  color: white;   
  text-decoration: none;
+ list-style: none;
+}
+html {
+    scroll-behavior: smooth;
 }
 
 body{
@@ -12,8 +16,50 @@ body{
     background-image: linear-gradient(to top, rgba(0, 140, 255, 0.466) 0%, rgba(0,0,0,1) 40%);
 }
 
+/* scrollbar */
+body::-webkit-scrollbar {
+    width: 5px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: linear-gradient(to top, rgba(0, 140, 255, 0.466) 0%, rgba(0,0,0,1) 40%);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #008eff;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+header li{
+    display: flex;
+    gap: 4rem;
+}
+header li a{
+    padding: 10px 30px;
+    background-color: #008eff;
+    border-radius: 9px;
+    transition: 500ms;
+    border: none;
+}
+header .idioma{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+header .idioma img{
+    width: 40px;
+}
 header .logo h1{
-    padding: 30px 60px;
+    padding: 30px 0;
     font-size: 20px;
     color: #008eff;
 }
@@ -22,7 +68,9 @@ header .logo h1{
     margin: 0 auto;
     text-align: center;
 }
-
+.titulo{
+    padding-top: 90px;
+}
 .todo-conteudo h1{
     display: flex;
     margin: 0 auto;
@@ -41,6 +89,7 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 50PX;
 }
 .titulo-section h1{
     padding-top: 100px;
@@ -53,8 +102,6 @@ span{
     border-radius: 50px;
     margin-top: 5px;
 }
-
-
 
 .atalhos{
     display: flex;
@@ -81,8 +128,6 @@ span{
     margin-top: 20px;
     border-radius: 28px;
 }
-
-
 
 .input{
     display: flex;
@@ -117,7 +162,6 @@ span{
     display: flex;
     justify-content: center;
     gap: 5rem;
-    padding-top: 50px;
     flex-wrap: wrap;
     align-items: center;
     padding-bottom: 100px;
@@ -142,10 +186,14 @@ span{
     display: flex;
     justify-content: center;
     gap: 5rem;
-    padding-top: 50px;
     flex-wrap: wrap;
     align-items: center;
     padding-bottom: 100px;
+}
+.extensao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .extensoes .extensao img{
     width: 110px;
@@ -161,4 +209,10 @@ span{
     border-radius: 9px;
     transition: 500ms;
     border: none;
+}
+
+@media screen and (max-width: 400px) {
+    .idioma p{
+        display: none;
+    }
 }
