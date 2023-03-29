@@ -166,6 +166,11 @@ span{
     align-items: center;
     padding-bottom: 100px;
 }
+/* .theme{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */
 .themes .theme img{
     width: 110px;
     border-radius: 50%;
@@ -211,8 +216,30 @@ span{
     border: none;
 }
 
+
+footer{
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+}
+footer .rodape-conteudo .icons{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 20px;
+}
+footer .rodape-conteudo img{
+    width: 30px;
+}
 @media screen and (max-width: 400px) {
     .idioma p{
         display: none;
     }
 }
+
+
