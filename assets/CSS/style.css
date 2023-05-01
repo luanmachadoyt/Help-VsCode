@@ -62,45 +62,11 @@ header li a {
 header .idioma {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 5px;
 }
 
 header .idioma img {
-    width: 40px;
-}
-
-header .idioma i:hover .dropdown {
-
-    display: block;
-    z-index: 999;
-
-}
-
-header .idioma i {
-    position: relative;
-}
-
-.dropdown .menu-drop{
-    
-}
-
-.dropdown {
-    display: none;
-    position: absolute;
-    width: 160 px;
-    border-radius: 15px;
-    background-color: red;
-    top: 18px;
-    left: -148px;
-
-}
-
-.dropdown li {
-    display: block;
-    padding: 20px 0px;
-    text-align: center;
-    position: relative;
-    
+    width: 30px;
 }
 
 header .logo h1 {
@@ -184,42 +150,10 @@ span {
     border-radius: 28px;
 }
 
-.input {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    padding-top: 50px;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.input .exemplo p {
-    width: 200px;
-    height: 35px;
-    border: 1px solid #008eff;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.input input {
-    padding: 10px 20px;
-    border: 1px solid #008eff;
-    border-radius: 20px;
-    background-color: transparent;
-
-}
-
-.input i {
-    font-size: 25px;
-}
-
 .themes {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 4rem;
     flex-wrap: wrap;
     align-items: center;
     padding-bottom: 100px;
@@ -252,7 +186,7 @@ span {
 .extensoes {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 4rem;
     flex-wrap: wrap;
     align-items: center;
     padding-bottom: 100px;
